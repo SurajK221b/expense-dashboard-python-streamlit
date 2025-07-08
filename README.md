@@ -16,16 +16,21 @@ This project is an expense management system that consists of a Streamlit fronte
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/expense-management-system.git
-   cd expense-management-system
+   git clone https://github.com/SurajK221b/expense-dashboard-python-streamlit.git
+   cd expense-dashboard-python-streamlit
    ```
 1. **Install dependencies:**:   
    ```commandline
     pip install -r requirements.txt
    ```
-1. **Run the FastAPI server:**:   
+1. **Run the FastAPI server:**  
    ```commandline
-    uvicorn server.server:app --reload
+   uvicorn server.server:app --reload
+   ```
+   If this does not work, try:
+   ```commandline
+   cd expense-dashboard-python-streamlit/frontend
+   fastapi dev .\server.py
    ```
 1. **Run the Streamlit app:**:   
    ```commandline
