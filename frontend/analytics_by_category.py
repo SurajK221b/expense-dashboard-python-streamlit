@@ -2,6 +2,7 @@ import streamlit as st
 from datetime import datetime
 import requests
 import pandas as pd
+import altair as alt
 
 API_URL = "http://localhost:8000"
 
@@ -33,7 +34,6 @@ def analytics_category_tab():
                 st.warning("No expenses found in the selected date range.")
                 return
 
-            # Prepare DataFrame
             data = {
                 "Category": list(result.keys()),
                 "Total": [result[cat]["total"] for cat in result],
@@ -43,11 +43,24 @@ def analytics_category_tab():
             df = pd.DataFrame(data)
             df_sorted = df.sort_values(by="Percentage", ascending=False)
 
-            # --- Visualization ---
-            st.markdown("### 📌 Category-wise Expense Distribution")
+            # --- Existing Bar Chart (Percentage) ---
+            st.markdown("### 📊 Category-wise Expense Distribution — Bar Chart")
             st.bar_chart(df_sorted.set_index("Category")["Percentage"], use_container_width=True)
 
-            # Format totals and percentages
+            # # --- Additional Pie Chart ---
+            # st.markdown("### 🥧 Category-wise Expense Distribution — Pie Chart")
+            # pie_chart = alt.Chart(df_sorted).mark_arc(innerRadius=50).encode(
+            #     theta=alt.Theta(field="Percentage", type="quantitative"),
+            #     color=alt.Color(field="Category", type="nominal", legend=alt.Legend(title="Category")),
+            #     tooltip=[
+            #         alt.Tooltip("Category", type="nominal"),
+            #         alt.Tooltip("Total", type="quantitative", format="₹,.2f"),
+            #         alt.Tooltip("Percentage", type="quantitative", format=".2f")
+            #     ],
+            # ).properties(width=400, height=400)
+            # st.altair_chart(pie_chart, use_container_width=True)
+
+            # Format totals and percentages for display in the table
             df_sorted["Total"] = df_sorted["Total"].map("₹{:,.2f}".format)
             df_sorted["Percentage"] = df_sorted["Percentage"].map("{:.2f}%".format)
 
@@ -56,3 +69,7 @@ def analytics_category_tab():
 
         except requests.exceptions.RequestException as e:
             st.error(f"🔴 Failed to fetch analytics: {e}")
+
+# If you want to run this tab standalone for testing, you can call the function here:
+if __name__ == "__main__":
+    analytics_category_tab()

@@ -62,3 +62,11 @@ def get_analytics():
         raise HTTPException(status_code=500, detail="Failed to retrieve monthly expense summary from the database.")
 
     return monthly_summary
+
+@app.post("/reports")
+def get_custom_reports(date_range: DateRange, categories: List[str] = None):
+    data = db_helper.fetch_custom_reports(date_range.start_date, date_range.end_date, categories)
+    if data is None:
+        raise HTTPException(status_code=500, detail="Failed to retrieve custom reports from the database.")
+
+    return data

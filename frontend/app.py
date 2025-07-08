@@ -2,6 +2,7 @@ import streamlit as st
 from add_update import add_update_tab
 from analytics_by_category import analytics_category_tab
 from analytics_by_months import analytics_months_tab
+from custom_report import custom_reports_tab
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -19,10 +20,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- Tabs ---
-tab1, tab2, tab3 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "➕ Add / Update Expenses", 
     "📊 Analytics by Category", 
-    "📅 Analytics by Month"
+    "📅 Analytics by Month",
+    "📄 Custom Report"
 ])
 
 with tab1:
@@ -33,3 +35,6 @@ with tab2:
 
 with tab3:
     analytics_months_tab()
+
+with tab4:
+    custom_reports_tab()

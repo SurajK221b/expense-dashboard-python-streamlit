@@ -1,49 +1,27 @@
-2025-07-08 13:49:35,739 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
-2025-07-08 13:50:23,946 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
-2025-07-08 13:50:40,779 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:51:22,788 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:51:24,858 - db_helper - INFO - delete_expenses_for_date called with 2025-01-01
-2025-07-08 13:51:24,872 - db_helper - INFO - insert_expense called with date: 2025-01-01, amount: 2000.0, category: Shopping, notes: Cloths
-2025-07-08 13:51:24,899 - db_helper - INFO - insert_expense called with date: 2025-01-01, amount: 900.0, category: Entertainment, notes: Movie
-2025-07-08 13:51:24,917 - db_helper - INFO - insert_expense called with date: 2025-01-01, amount: 13000.0, category: Rent, notes: Room rent
-2025-07-08 13:51:24,929 - db_helper - INFO - insert_expense called with date: 2025-01-01, amount: 4000.0, category: Food, notes: Lunch
-2025-07-08 13:51:28,026 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:51:30,107 - db_helper - INFO - fetch_expense_summary called with start: 2025-01-01 end: 2025-01-31
-2025-07-08 13:53:13,768 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
-2025-07-08 13:53:15,852 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 13:53:50,934 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:53:53,001 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 13:53:56,585 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:53:58,657 - db_helper - INFO - fetch_expense_summary called with start: 2025-01-01 end: 2025-01-31
-2025-07-08 13:54:00,695 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 13:55:35,273 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:55:37,340 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 13:56:43,188 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:56:45,270 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 13:57:55,578 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 13:57:57,663 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 13:58:04,380 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-02
-2025-07-08 13:58:06,457 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:00:14,608 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:00:16,678 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:03:54,453 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:03:56,519 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:06:08,985 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:06:11,056 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:07:29,233 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:07:31,302 - db_helper - INFO - fetch_expense_summary called with start: 2025-01-01 end: 2025-01-31
-2025-07-08 14:07:33,369 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:07:58,729 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:08:00,780 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:08:02,463 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:08:04,536 - db_helper - INFO - fetch_expense_summary called with start: 2025-01-01 end: 2025-01-31
-2025-07-08 14:08:06,587 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:09:13,336 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:09:15,405 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:09:25,256 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:09:27,335 - db_helper - INFO - fetch_expense_summary called with start: 2025-01-01 end: 2025-01-31
-2025-07-08 14:09:29,413 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:10:16,784 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:10:18,881 - db_helper - INFO - fetch_expense_summary_by_months
-2025-07-08 14:11:10,386 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
-2025-07-08 14:11:12,437 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:47:33,025 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:47:35,095 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:48:27,162 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:48:29,243 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:49:22,485 - db_helper - INFO - fetch_custom_reports called with start: 2025-07-08, end: 2025-07-08, categories: ['Rent']
+2025-07-08 14:50:56,731 - db_helper - INFO - fetch_custom_reports called with start: 2025-07-08, end: 2025-07-08, categories: ['rent']
+2025-07-08 14:51:05,922 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:51:07,989 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:51:13,209 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:51:15,279 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:51:25,626 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:51:26,826 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:51:28,875 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:51:50,374 - db_helper - INFO - fetch_custom_reports called with start: 2025-07-08, end: 2025-07-08, categories: ['']
+2025-07-08 14:52:13,188 - db_helper - INFO - fetch_custom_reports called with start: 2025-01-01, end: 2026-01-01, categories: ['']
+2025-07-08 14:52:15,599 - db_helper - INFO - fetch_custom_reports called with start: 2025-01-01, end: 2026-01-01, categories: ['']
+2025-07-08 14:52:23,283 - db_helper - INFO - fetch_custom_reports called with start: 2025-01-01, end: 2026-01-01, categories: ['Rent']
+2025-07-08 14:53:16,035 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:53:18,086 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:53:22,609 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:53:24,675 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:53:32,351 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:53:34,418 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:53:36,687 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:53:38,254 - db_helper - INFO - fetch_expenses_for_date called with 2025-01-01
+2025-07-08 14:53:40,340 - db_helper - INFO - fetch_expense_summary_by_months
+2025-07-08 14:53:42,461 - db_helper - INFO - fetch_custom_reports called with start: 2024-07-01, end: 2026-07-01, categories: []

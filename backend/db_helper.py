@@ -74,6 +74,30 @@ def fetch_monthly_expense_summary():
         data = cursor.fetchall()
         return data
 
+def fetch_custom_reports(start_date=None, end_date=None, categories=None):
+    logger.info(f"fetch_custom_reports called with start: {start_date}, end: {end_date}, categories: {categories}")
+    with get_db_cursor() as cursor:
+        query = "SELECT * FROM expenses"
+        conditions = []
+        params = []
+
+        if start_date:
+            conditions.append("expense_date >= %s")
+            params.append(start_date)
+        if end_date:
+            conditions.append("expense_date <= %s")
+            params.append(end_date)
+        if categories:
+            placeholders = ','.join(['%s'] * len(categories))
+            conditions.append(f"category IN ({placeholders})")
+            params.extend(categories)
+
+        if conditions:
+            query += " WHERE " + " AND ".join(conditions)
+
+        cursor.execute(query, params)
+        data = cursor.fetchall()
+        return data
 
 if __name__ == "__main__":
     # expenses = fetch_expenses_for_date("2024-09-30")
