@@ -1,8 +1,17 @@
 # Expense Management Dashboard
 
-![Expense Dashboard Add / Update Expenses ](expense_ui_01.png)
-![Expense Dashboard Analytics By Categoty](expense_ui_02.png)
+## Dashboard Screenshots
+
+### Add / Update Expenses
+![Expense Dashboard Add / Update Expenses](expense_ui_01.png)
+
+### Analytics By Category
+![Expense Dashboard Analytics By Category](expense_ui_02.png)
+
+### Analytics By Month
 ![Expense Dashboard Analytics By Month](expense_ui_03.png)
+
+### Custom Report
 ![Expense Dashboard Custom Report](expense_ui_04.png)
 
 
