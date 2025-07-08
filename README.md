@@ -1,66 +1,140 @@
-# Expense Management Dashboard
+# 💼 Expense Management Dashboard
 
-## Dashboard Screenshots
+An end-to-end expense tracking and analytics solution built using **Streamlit**, **FastAPI**, and **MySQL**.
 
-### Add / Update Expenses
-![Expense Dashboard Add / Update Expenses](expense_ui_01.png)
+---
 
-### Analytics By Category
-![Expense Dashboard Analytics By Category](expense_ui_02.png)
+## 📸 Dashboard Screenshots
 
-### Analytics By Month
-![Expense Dashboard Analytics By Month](expense_ui_03.png)
+### ➕ Add / Update Expenses
 
-### Custom Report
-![Expense Dashboard Custom Report](expense_ui_04.png)
+![Add / Update Expenses](expense_ui_01.png)
 
+### 📊 Analytics by Category
 
+![Analytics by Category](expense_ui_02.png)
 
-This project is an expense management dashboard that consists of a Streamlit frontend application and a FastAPI backend server.
-It allows users to manage their expenses, view analytics, and interact with a MySQL database.
+### 📅 Analytics by Month
 
-## Features
-- **Expense Management**: Add, update, and delete expenses.
-- **Analytics**: View analytics by category and month.
+![Analytics by Month](expense_ui_03.png)
 
-## Project Structure
+### 📄 Custom Reports
 
-- **frontend/**: Contains the Streamlit application code.
-- **backend/**: Contains the FastAPI backend server code.
-- **tests/**: Contains the test cases for both frontend and backend.
-- **database/**: Contains the SQL file to set up the MySQL database.
-- **server/**: Contains the FastAPI server code.
-- **.gitignore**: Specifies files and directories to ignore in the Git repository.
-- **requirements.txt**: Lists the required Python packages.
-- **README.md**: Provides an overview and instructions for the project.
+![Custom Reports](expense_ui_04.png)
 
-## Setup Instructions
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/SurajK221b/expense-dashboard-python-streamlit.git
-   cd expense-dashboard-python-streamlit
-   ```
+## 📌 Project Overview
 
-2. **Set up the database:**
-   - Import the SQL file from the `database` folder into MySQL (e.g., using MySQL Workbench).
-   - This will create a database named `expense-manager`.
+This project delivers a fully functional expense management system comprising:
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+* A responsive **Streamlit frontend** for user interaction.
+* A high-performance **FastAPI backend** for data processing.
+* **MySQL** for persistent storage and analytics.
 
-4. **Run the FastAPI server:**  
-   ```commandline
-   uvicorn server.server:app --reload
-   ```
-   If this does not work, try:
-   ```commandline
-   cd expense-dashboard-python-streamlit/frontend
-   fastapi dev .\server.py
-   ```
-5. **Run the Streamlit frontend:**
-   ```bash
-   streamlit run frontend/app.py
-   ```
+The system empowers users to manage personal or business expenses, analyze trends, and generate custom financial reports with ease.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer          | Technology                                       |
+| -------------- | ------------------------------------------------ |
+| **Frontend**   | [Streamlit](https://streamlit.io/)               |
+| **Backend**    | [FastAPI](https://fastapi.tiangolo.com/)         |
+| **Database**   | [MySQL](https://www.mysql.com/)                  |
+| **ORM**        | [SQLAlchemy](https://www.sqlalchemy.org/)        |
+| **Validation** | [Pydantic](https://pydantic-docs.helpmanual.io/) |
+| **Server**     | [Uvicorn](https://www.uvicorn.org/) (ASGI)       |
+| **Testing**    | [pytest](https://docs.pytest.org/)               |
+
+---
+
+## 🚀 Features
+
+* ✅ **Expense Entry & Modification**
+  Add, update, and manage daily expenses with category-wise tagging and notes.
+
+* 📊 **Visual Analytics**
+  Analyze expenses by **month** and **category** through bar charts and pie charts.
+
+* 📄 **Custom Reports**
+  Generate dynamic reports with filters such as date range, category, vendor, and amount.
+
+* 💾 **MySQL Integration**
+  All transactions are stored securely in a relational database.
+
+* 🧪 **Unit & Integration Testing**
+  Robust test coverage using `pytest`.
+
+---
+
+## 📂 Project Structure
+
+```
+expense-dashboard-python-streamlit/
+├── backend/           # FastAPI backend logic
+├── frontend/          # Streamlit frontend UI
+├── database/          # SQL schema and seed files
+├── server/            # FastAPI server entry point
+├── tests/             # Test cases (pytest)
+├── requirements.txt   # Python dependencies
+└── README.md          # Project documentation
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/SurajK221b/expense-dashboard-python-streamlit.git
+cd expense-dashboard-python-streamlit
+```
+
+### 2️⃣ Configure the Database
+
+* Import the `.sql` file from the `/database` folder using MySQL Workbench or CLI.
+* Ensure the database is named `expense-manager`.
+
+### 3️⃣ Install Python Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Launch the FastAPI Server
+
+```bash
+uvicorn server.server:app --reload
+```
+
+> 🔄 If issues persist, try:
+
+```bash
+cd expense-dashboard-python-streamlit/frontend
+fastapi dev .\server.py
+```
+
+### 5️⃣ Start the Streamlit Frontend
+
+```bash
+streamlit run frontend/app.py
+```
+
+---
+
+## 📈 Future Enhancements (Planned)
+
+* 🔐 User authentication and multi-user support
+* 📅 Recurring expenses & subscriptions
+* 📦 Expense imports from CSV/Excel
+* 📤 Email-based report delivery
+* 🧠 AI-based insights and anomaly detection
+
+---
+
+## 🤝 Contributing
+
+Pull requests and issue reports are welcome. Please follow best practices and ensure tests pass locally.
